@@ -177,6 +177,103 @@
             text-align: center;
         }
 
+        /* Fixed Screenshot Styles */
+.screenshot-gallery {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.screenshot-item {
+    width: 180px; /* Fixed width */
+    height: 320px; /* Fixed height */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    border: 3px solid #fff;
+}
+
+.screenshot-item:hover {
+    transform: translateY(-5px);
+}
+
+.screenshot-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures images cover the container without distortion */
+}
+
+/* Carousel with Fixed Dimensions */
+.carousel {
+    position: relative;
+    width: 250px; /* Fixed width */
+    height: 450px; /* Fixed height */
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.carousel-controls {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.carousel-dot.active {
+    background: white;
+}
+
+/* Single Phone Mockup with Fixed Size */
+.phone-mockup {
+    width: 250px; /* Fixed width */
+    height: 450px; /* Fixed height */
+    background: #333;
+    border-radius: 25px;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border: 3px solid #444;
+}
+
+.phone-mockup img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
         .phone-mockup {
             width: 300px;
             height: 600px;
@@ -370,7 +467,7 @@
                 </div>
                 <div class="app-screenshot">
                    <div class="phone-mockup">
-    <img src="https://play-lh.googleusercontent.com/zAuiQHvF1C9xysPUuP6EfpndkqZtjTye-hyRcOKjtJANTkYlpFii_RfC0acl2Dsp0lE=w2560-h1440" alt="App Screenshot">
+    <img src="https://play-lh.googleusercontent.com/zAuiQHvF1C9xysPUuP6EfpndkqZtjTye-hyRcOKjtJANTkYlpFii_RfC0acl2Dsp0lE=w2560-h1440" width="200px" height="800px" alt="App Screenshot">
 </div>
                 </div>
             </div>
