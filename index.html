@@ -42,22 +42,50 @@
             padding: 15px 0;
         }
 
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
+        /* Responsive logo */
+@media (max-width: 768px) {
+    .logo-img {
+        width: 80px;  /* Smaller on tablets */
+        height: 80px; /* Smaller on tablets */
+    }
+    
+    .logo-text {
+        font-size: 20px;
+    }
+    
+    footer .logo-img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    footer .logo-text {
+        font-size: 18px;
+    }
+}
 
-        .logo i {
-            font-size: 28px;
-            color: #4a6ee0;
-        }
-
-        .logo-text {
-            font-size: 22px;
-            font-weight: 700;
-            color: #333;
-        }
+@media (max-width: 480px) {
+    .logo-img {
+        width: 60px;  /* Even smaller on mobile */
+        height: 60px; /* Even smaller on mobile */
+    }
+    
+    .logo-text {
+        font-size: 18px;
+    }
+    
+    footer .logo-img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    footer .logo-text {
+        font-size: 16px;
+    }
+    
+    .logo {
+        gap: 10px; /* Reduced gap on mobile */
+    }
+}
 
         /* Hero Section */
         .hero {
